@@ -19,7 +19,7 @@ TI5_MOTOR_RANGE ti5_motor_range = {
     .T_MAX = {T_30_40_PRO,T_40_52_PRO, T_50_60_PRO, T_60_70_PRO, T_70_PRO, T_60_PRO_S, T_70_PRO_S},
     .TC = {TC_30_40_PRO,TC_40_52_PRO, TC_50_60_PRO, TC_60_70_PRO, TC_70_PRO, TC_60_PRO_S, TC_70_PRO_S},
 };
-//这个要根据实际的Z1机器人因克斯电机型号来设置
+//这个要根据实际的Z1机器人YKS电机型号来设置
 int Z1_YKS_MOTOR_ID_Type[6] = {A13720, A10020_1, A8112, A13715, A6408, A6408};
 int Z1_TI5_MOTOR_ID_Type[7] = {
     CRA_RI60_70_PRO_101, CRA_RI60_70_PRO_101, CRA_RI50_60_PRO_101, CRA_RI50_60_PRO_101, CRA_RI40_52_PRO_101,
@@ -49,7 +49,7 @@ Slave g_slaves[5] = {
             {MOTOR_YKS, 5, 10}, {MOTOR_YKS, 6, 11}
         }
     },
-    // CAN ID 3: YKS 1 + 钛虎1-5
+    // CAN ID 3: YKS 1 + Ti5 1-5
     {
         .slave_id = 3,
         .motor_count = 6,
@@ -60,7 +60,7 @@ Slave g_slaves[5] = {
             {MOTOR_TI5, 6, 17}
         }
     },
-    // CAN ID 4: 钛虎1-6
+    // CAN ID 4: Ti5 1-6
     {
         .slave_id = 4,
         .motor_count = 6,
@@ -70,7 +70,7 @@ Slave g_slaves[5] = {
             {MOTOR_TI5, 5, 22}, {MOTOR_TI5, 6, 23}
         }
     },
-    // CAN ID 5: 钛虎1-5
+    // CAN ID 5: Ti5 1-5
     {
         .slave_id = 5,
         .motor_count = 5,

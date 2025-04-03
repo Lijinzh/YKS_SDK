@@ -20,7 +20,7 @@ std::mutex message_mutex; //全局互斥锁，用于保护Tx_Message数组
 spsc_queue<EtherCAT_Msg_ptr, capacity<10> > messages[SLAVE_NUMBER];
 std::atomic<bool> running{false};
 std::thread runThread; //Ethercat任务线程
-YKSMotorData motorDate_recv[YKS_MOTOR_NUMBER]; //一个存放所有因克斯电机的状态信息以及期望状态信息的数组
+YKSMotorData motorDate_recv[YKS_MOTOR_NUMBER]; //一个存放所有YKS电机的状态信息以及期望状态信息的数组
 YKS_IMUData imuData_recv;
 char IO_map[4096];
 OSAL_THREAD_HANDLE checkThread;

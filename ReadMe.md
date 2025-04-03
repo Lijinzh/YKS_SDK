@@ -1,5 +1,5 @@
 ---
-author: lijinzhe
+author: GoldenPhilosophy
 date: 2025-03-11
 ---
 
@@ -138,7 +138,7 @@ Z1Legs类，***默认为PR模式***，也就是已经经过了闭链运动学的
 
 在[motor_control.c](app/motor_control.c)和[motor_control.h](app/motor_control.h)
 包含了有关Ethercat板子所接电机型号的设置，以及对应的参数设置，需要使用者提前注意设置好
-在[transmit.cpp](app/transmit.cpp)中，包含所接钛虎电机和因克斯电机数量的设置，以及最大从站数量的设置，需要使用者根据自己的电机数量进行修改
+在[transmit.cpp](app/transmit.cpp)中，包含所接Ti5电机和YKS电机数量的设置，以及最大从站数量的设置，需要使用者根据自己的电机数量进行修改
 
 ethercat 从站默认分配六个通道，CAN1通道为1，2，3；CAN2通道为 4，5，6；
 更改ID，等设置指令均使用CAN1，即1，2，3通道
@@ -151,4 +151,4 @@ Ethercat驱动板内部有6个通道，使用的时候指定通道即可，电�
 安装xone手柄驱动：（获取力反馈，并非必须）需要同时安装xone和xpadneo才能用，就听神奇的
 https://gitcode.com/gh_mirrors/xo/xone
 
-更多教程参见app文件夹下的[因克斯官方教程](app/README.md#SOEM主站)
+更多教程参见app文件夹下的[YKS官方教程](app/README.md#SOEM主站)

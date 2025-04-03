@@ -34,7 +34,7 @@
 #define POS_MAX 12.5f
 #define SPD_MIN (-18.0f)
 #define SPD_MAX 18.0f
-//下面的KD不同因克斯电机不一样
+//下面的KD不同YKS电机不一样
 //EC-A4310-P2-36  EC-A6408-P2-25  EC-A8112-P1-18
 #define KD1_MIN 0.0f
 #define KD1_MAX 5.0f
@@ -84,7 +84,7 @@
 #define I13720_MIN (-220.0f)
 #define T13720_MAX 400.0f
 #define I13720_MAX 220.0f
-//钛虎电机
+//Ti5电机
 //CRA-RI30-40-PRO-101
 #define GEAR_30_40_PRO 101
 #define T_30_40_PRO 2.8f
@@ -138,7 +138,7 @@ enum YKS_MOTOR_TYPE {
     A10020_2 = 4,
     A13715 = 5,
     A13720 = 6
-}; //因克斯只有7种类型的电机
+}; //YKS只有7种类型的电机
 enum TI5_MOTOR_TYPE {
     CRA_RI30_40_PRO_101 = 0,
     CRA_RI40_52_PRO_101 = 1,
@@ -147,9 +147,9 @@ enum TI5_MOTOR_TYPE {
     CRA_RI70_90_PRO_101 = 4,
     CRA_RI80_70_PRO_S_101 = 5,
     CRA_RI90_70_PRO_S_101 = 6
-}; //钛虎电机
+}; //Ti5电机
 typedef struct {
-    float KD_MIN[7]; //因克斯只有7种类型的电机
+    float KD_MIN[7]; //YKS只有7种类型的电机
     float KD_MAX[7];
     float T_MIN[7];
     float T_MAX[7];
@@ -215,7 +215,7 @@ typedef struct {
 //-------------------------------------
 typedef enum {
     MOTOR_YKS, // YKS 电机
-    MOTOR_TI5, // 钛虎电机
+    MOTOR_TI5, // Ti5电机
 } MotorType;
 
 //-------------------------------------

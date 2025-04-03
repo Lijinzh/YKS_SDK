@@ -8,8 +8,8 @@
 #define TRANSMIT_H
 
 #define SLAVE_NUMBER 5 //可接最大从机数
-#define YKS_MOTOR_NUMBER 13 //接入的因克斯电机数
-#define TI5_MOTOR_NUMBER 16 //接入的钛虎电机数
+#define YKS_MOTOR_NUMBER 13 //接入的YKS电机数
+#define TI5_MOTOR_NUMBER 16 //接入的Ti5电机数
 
 #include <inttypes.h>
 #include <stdio.h>
